@@ -30,7 +30,7 @@
   "Set items in localStorage and returns the value provided in argument.
    Accepts a map of keywords and EDN."
   [objects]
-  (map (fn [[key value]] (set-item! key value)))
+  (mapv (fn [[key value]] (set-item! key value)) objects)
   objects)
 
 (defn remove-item!
@@ -46,7 +46,7 @@
   "Remove items from localStorage and returns the values which was stored inside.
    Accepts a vector of keywords."
   [keys]
-  (map (fn [key] (remove-item! key))))
+  (reduce (fn [acc key] (assoc acc key (remove-item! key))) {} keys))
 
 (defn length!
   "Returns the length of localStorage."
