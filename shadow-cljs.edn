@@ -1,0 +1,4 @@
+{:source-paths ["src" "test"]
+ :dependencies []
+ :builds {:test {:target :browser-test
+                 :test-dir "resources/public"}}}

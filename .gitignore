@@ -12,3 +12,6 @@ pom.xml.asc
 .hg/
 .DS_Store
 Thumbs.db
+node_modules/
+.shadow-cljs/
+resources/
