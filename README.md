@@ -76,5 +76,5 @@ git clone git@github.com:ghivert/cljs-local-storage.git
 yarn
 
 # Run the tests
-yarn test
+yarn dev
 ```
