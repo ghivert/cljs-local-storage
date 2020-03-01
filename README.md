@@ -65,3 +65,16 @@ But Local Storage also have a re-frame utility!
   (fn [cofx]
     (println (:local-storage cofx))))
 ```
+
+# Running the project locally
+
+```bash
+# Clone the repo
+git clone git@github.com:ghivert/cljs-local-storage.git
+
+# Install the dependencies
+yarn
+
+# Run the tests
+yarn test
+```
